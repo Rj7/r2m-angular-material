@@ -8,6 +8,10 @@
         <label>Email</label>
         <input ng-model="vm.user.email" type="email">
     </md-input-container>
+    <md-input-container>
+        <label>Mentor Type</label>
+        <input ng-model="vm.user.mentor_type" >
+    </md-input-container>
 </md-content>
 <md-content class="md-padding">
     <form name="userForm">
@@ -17,8 +21,8 @@
                 <input ng-model="vm.user.company" disabled>
             </md-input-container>
             <md-input-container flex>
-                <label>Submission Date</label>
-                <input type="date" ng-model="vm.user.submissionDate">
+                <label>Phone No</label>
+                <input ng-model="vm.user.phoneNo">
             </md-input-container>
         </div>
         <div layout layout-sm="column">
@@ -50,10 +54,10 @@
                 <input ng-model="vm.user.postalCode">
             </md-input-container>
         </div>
-        <md-input-container flex>
-            <label>About us</label>
-            <textarea ng-model="vm.user.biography" columns="1"
-                      md-maxlength="150"></textarea>
-        </md-input-container>
+        <!--<md-input-container flex>-->
+            <!--<label>About us</label>-->
+            <!--<textarea ng-model="vm.user.biography" columns="1"-->
+                      <!--md-maxlength="150"></textarea>-->
+        <!--</md-input-container>-->
     </form>
 </md-content>

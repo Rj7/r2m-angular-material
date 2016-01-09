@@ -11,7 +11,26 @@ $widget-height: 310px;
 $font-weight-bold: 600;
 $font-size-large: 22px;
 
+.website-title{
+  margin-left: 10px;
+}
 
+.title-btn{
+  background-color: #4db6ac;
+}
+
+.dashboard_options{
+  background-color: #f1f8e9;
+}
+.dashboard_options:hover{
+  z-index:1000;
+  box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+  -webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+  -moz-box-shadow:rgba(0, 0, 0, 0.3) 0 16px 16px 0;
+  color: darkslategrey;
+  background-color: gre ;
+  cursor: pointer;
+}
 // LAYOUT
 body {
   color: $text-color;

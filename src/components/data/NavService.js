@@ -15,14 +15,24 @@
         sref: '.dashboard'
       },
       {
-        name: 'Profile',
-        icon: 'person',
-        sref: '.profile'
+        name: 'Reports',
+        icon: 'trending_up',
+        sref: '.table'
       },
       {
-        name: 'Table',
-        icon: 'view_module',
+        name: 'Class',
+        icon: 'supervisor_account',
         sref: '.table'
+      },
+      {
+        name: 'Class List',
+        icon: 'supervisor_account',
+        sref: '.students'
+      },
+      {
+        name: 'Account',
+        icon: 'person',
+        sref: '.profile'
       }
     ];
 
