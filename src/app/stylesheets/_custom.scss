@@ -11,9 +11,20 @@ $widget-height: 310px;
 $font-weight-bold: 600;
 $font-size-large: 22px;
 
+
 .website-title{
   margin-left: 10px;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
 
 .title-btn{
   background-color: #4db6ac;

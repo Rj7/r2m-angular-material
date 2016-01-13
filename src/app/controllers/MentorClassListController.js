@@ -2,10 +2,12 @@
 
     angular
         .module('app')
-        .controller('StudentsController', [
+        .controller('MentorClassListController', [
             'tableService',
             TableController
         ]);
+
+
 
     function TableController(tableService) {
         var vm = this;
@@ -38,5 +40,4 @@
             console.log('got it');
         }
     }
-
 })();

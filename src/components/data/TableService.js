@@ -10,13 +10,13 @@
   function tableService($q){
     var tableData = [
       {
-        issue: 'Raja',
+        name: 'Raja',
         progress: 40,
         status: 'Level 5',
         class: 'md-accent'
       },
       {
-        issue: 'Suresh',
+        name: 'Suresh',
         progress: 60,
         status: 'Level 7',
         class: 'md-accent'

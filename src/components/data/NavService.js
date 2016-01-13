@@ -19,11 +19,11 @@
         icon: 'trending_up',
         sref: '.table'
       },
-      {
-        name: 'Class',
-        icon: 'supervisor_account',
-        sref: '.table'
-      },
+      //{
+      //  name: 'Class',
+      //  icon: 'supervisor_account',
+      //  sref: '.table'
+      //},
       {
         name: 'Class List',
         icon: 'supervisor_account',

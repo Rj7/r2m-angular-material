@@ -18,7 +18,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
             })
             .state('student', {
                 url: '/student',
-                templateUrl: 'app/views/student.html',
+                templateUrl: 'app/views/student_error_bucket.html',
                 controller:'StudentController',
                 controllerAs: 'vm'
             })
@@ -28,7 +28,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
             })
             .state('learning_session', {
                 url:'/student/learning_session',
-                templateUrl:'app/views/learning_session.html'
+                templateUrl:'app/views/student_learning_session.html'
             })
             .state('student_report', {
                 url:'/student/report',
@@ -47,7 +47,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
                 url: '/dashboard',
                 controller: 'TableController',
                 controllerAs: 'vm',
-                templateUrl: 'app/views/dashboard.html',
+                templateUrl: 'app/views/mentor_dashboard.html',
                 data: {
                     //title: 'Dashboard'
                     title: 'Table'
@@ -55,7 +55,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
             })
             .state('home.profile', {
                 url: '/profile',
-                templateUrl: 'app/views/profile.html',
+                templateUrl: 'app/views/mentor_accounts.html',
                 controller: 'ProfileController',
                 controllerAs: 'vm',
                 data: {
@@ -66,16 +66,16 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
                 url: '/table',
                 controller: 'TableController',
                 controllerAs: 'vm',
-                templateUrl: 'app/views/table.html',
+                templateUrl: 'app/views/mentor_reports.html',
                 data: {
                     title: 'Table'
                 }
             })
             .state('home.students', {
                 url: '/students',
-                controller: 'StudentsController',
+                controller: 'MentorClassListController',
                 controllerAs: 'vm',
-                templateUrl: 'app/views/students.html',
+                templateUrl: 'app/views/mentor_class_list.html',
                 data: {
                     //title: 'Dashboard'
                     title: 'Table'
