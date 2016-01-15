@@ -1,18 +1,18 @@
-
-<div layout-fill layout="column"  >
-
+<div style="background-color: #b5d592" layout-fill >
     <md-toolbar style="background-color: teal" >
         <div class="md-toolbar-tools">
             <img src="http://placehold.it/120x64" >
-            <span class="website-title" >
+            <span class="website-title" hide-sm >
                 <h1>
                     <a ui-sref="student" >Road2Math</a>
                 </h1>
             </span>
             <!-- fill up the space between left and right area -->
             <span flex></span>
-            <md-button class="title-btn">
-                Settings
+            <h2>{{ vm.game_name }}</h2>
+            <span flex></span>
+            <md-button ui-sref="student_dashboard"  hide-sm class="title-btn">
+                Home
             </md-button>
             <md-button  class="title-btn">
                 Logout
@@ -20,55 +20,45 @@
         </div>
     </md-toolbar>
 
-    <div layout="row" layout-fill style="background-color: lightgreen" >
-        <div flex="20" layout="column" >
-            <div flex="20" >
-            </div>
-            <div flex="60" >
-                <!--<img src="assets/images/mickey_mouse.png">-->
-            </div>
-            <div flex="20" >
+    <div layout="row" >
+        <div flex-lg="20" flex-gt-lg="20" flex-md="10" flex-sm="0" >
 
+        </div>
+        <div flex-lg="60" flex >
+            <div layout-padding layout="column" layout-align="space-around center" >
+
+                <div flex >
+
+                </div>
+                <div flex >
+
+                </div>
+                <div flex >
+
+                </div>
+                <div flex >
+                    <img src="assets/images/r2mdemo.png">
+                </div>
+                <div flex layout-fill layout="row" layout-align="space-around center" >
+                    <div layout="column" layout-align="center end">
+                        <md-button ui-sref="student_dashboard"  class="md-raised"
+                               style="width: 150px;float: right; background-color:#4DB6AC ; color: whitesmoke;" >Skip to Home
+                        <i class="material-icons">keyboard_arrow_right</i>
+                        </md-button>
+                    </div>
+                    <div layout="column" layout-align="center end">
+
+                        <md-button ng-click="vm.showAlert()" class="md-raised help-btn" layout-align="end center" >
+                            <i class="material-icons">help</i> Help
+                        </md-button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div flex="60" layout="column" >
-
-            <md-card flex>
-                <div style=" width: inherit; text-align: center; vertical-align: middle " >
-                    <span >
-                        <h2>Error Bucket</h2>
-                        <p>Game Instructions</p>
-                    </span>
-                </div>
-
-            </md-card>
-            <md-card flex>
-                <md-content layout-padding layout="row" >
-                    <div flex="20" >
-
-                    </div>
-                    <div flex="60" >
-                        <img src="assets/images/r2mdemo.png">
-                    </div>
-                    <div flex="20">
-
-                    </div>
-                </md-content>
-            </md-card>
-            <md-card flex>
-                <div >
-                    <md-button ui-sref="student_dashboard"  class="md-raised title-btn" style="width: 150px;margin:25px;float: right; background-color:#4DB6AC ; color: whitesmoke;" > Next </md-button>
-                </div>
-
-            </md-card>
-        </div>
-        <div flex layout="column" >
-
+        <div flex-lg="20" flex-gt-lg="20" flex-md="10" flex-sm="0" >
 
         </div>
     </div>
 
 
 </div>
-
-

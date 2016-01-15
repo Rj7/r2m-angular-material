@@ -1,5 +1,4 @@
 <!-- TODO: Replace table to table component when https://github.com/angular/material/issues/796 will closed -->
-<md-button class="md-warn" href="#" >Proceed to Pay </md-button>
 <div class="table-responsive-vertical md-whiteframe-z1">
     <table id="table" class="table table-hover table-bordered">
         <thead>
@@ -13,11 +12,11 @@
         <tbody>
         <tr ng-repeat="data in vm.tableData track by $index">
             <td data-title="ID">{{$index + 1}}</td>
-            <td data-title="Issue"><a ng-click="vm.showStudentDetails($event)" href="#" >{{data.name}}</a></td>
+            <td data-title="Issue"><a>{{data.name}}</a></td>
             <td data-title="Status">{{data.status}}</td>
             <td data-title="Action" >
-                <a href="#" >Modify</a> /
-                <a href="#" >delete</a>
+                <a ng-click="showTabDialog($event)" href="javascript:void(0)"  >Modify</a> /
+                <a ng-click="showConfirm()" href="javascript:void(0)"  >delete</a>
             </td>
             <!--<td data-title="Progress">-->
             <!--<md-progress-linear class="table-progress {{data.class}}"-->
@@ -29,5 +28,25 @@
         </tbody>
     </table>
 </div>
-<md-button class="md-warn" href="#" ><i class="glyphicon glyphicon-plus" ></i>Add New Student </md-button>
+<!--<div class="dialog-demo-content" layout="row" layout-wrap layout-margin>-->
+    <!--<div hide-gt-sm layout="row" layout-align="center center" flex="100">-->
+        <!--<md-checkbox ng-model="customFullscreen" aria-label="Fullscreen Custom Dialog">Custom Dialog Fullscreen</md-checkbox>-->
+    <!--</div>-->
+    <!--<md-button ng-click="showTabDialog($event)" href="#" ><i class="glyphicon glyphicon-plus" ></i>Add New Student </md-button>-->
+<!--</div>-->
+<!--<md-button ng-click="showTabDialog($event)" href="#" ><i class="glyphicon glyphicon-plus" ></i>Add New Student </md-button>-->
 
+<div class="md-padding" id="popupContainer" ng-cloak>
+
+    <div class="dialog-demo-content" layout="row" layout-align="space-around end" layout-wrap layout-margin>
+        <!--<div hide-gt-sm layout="row" layout-align="center center" flex="100">-->
+            <!--<md-checkbox ng-model="customFullscreen" aria-label="Fullscreen Custom Dialog">Custom Dialog Fullscreen</md-checkbox>-->
+        <!--</div>-->
+        <md-button class="md-raised" ng-click="showTabDialog($event)" >
+            Add a New Student
+        </md-button>
+
+        <md-button class="md-warn md-raised" ng-click="showConfirm($event)"  >Pay </md-button>
+    </div>
+
+</div>

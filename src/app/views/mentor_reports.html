@@ -12,7 +12,7 @@
         <tr ng-repeat="data in vm.tableData track by $index">
             <td data-title="ID">{{$index + 1}}</td>
             <td data-title="Name">
-                <a href="#" >{{data.name}}</a>
+                <a ng-click="showTabDialog($event)" href="javascript:void(0)" >{{data.name}}</a>
             </td>
             <td data-title="Status">{{data.status}}</td>
             <td data-title="Progress">
@@ -41,3 +41,7 @@
     <panel-widget flex title="Performance" template="app/views/partials/performance.html" options="true"></panel-widget>
     <!--<panel-widget flex title="TODO list" template="app/views/partials/checkboxes.html"></panel-widget>-->
 </div>
+
+<!--<md-button class="md-raised" ng-click="showTabDialog($event)" >-->
+    <!--Add a New Student-->
+<!--</md-button>-->

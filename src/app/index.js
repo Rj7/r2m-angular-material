@@ -19,7 +19,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
             .state('student', {
                 url: '/student',
                 templateUrl: 'app/views/student_error_bucket.html',
-                controller:'StudentController',
+                controller:'StudentErrorBucketController',
                 controllerAs: 'vm'
             })
             .state('student_dashboard', {
@@ -45,7 +45,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
             })
             .state('home.dashboard', {
                 url: '/dashboard',
-                controller: 'TableController',
+                controller: 'MentorDashboardController',
                 controllerAs: 'vm',
                 templateUrl: 'app/views/mentor_dashboard.html',
                 data: {
@@ -64,7 +64,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
             })
             .state('home.table', {
                 url: '/table',
-                controller: 'TableController',
+                controller: 'MentorReportController',
                 controllerAs: 'vm',
                 templateUrl: 'app/views/mentor_reports.html',
                 data: {

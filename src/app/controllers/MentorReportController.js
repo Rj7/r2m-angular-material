@@ -5,7 +5,7 @@
     //TO DO: Merge $scope and vm as single variable
     angular
         .module('app')
-        .controller('MentorClassListController', function($scope, $mdDialog, $mdMedia) {
+        .controller('MentorReportController', function($scope, $mdDialog, $mdMedia) {
             $scope.status = '  ';
             $scope.customFullscreen = $mdMedia('xs') || $mdMedia('sm');
 
@@ -14,24 +14,15 @@
             vm.tableData = [
                 {
                     name: 'Raja',
-                    status: 'Active',
-                    added_on: '5 Dec',
-
+                    progress: 40,
+                    status: 'Level 5',
+                    class: 'md-accent'
                 },
                 {
                     name: 'Suresh',
-                    status: 'Trail Expired',
-                    added_on: '10 Dec',
-                },
-                {
-                    name: 'Holger',
-                    status: '2 Days Trail Pending',
-                    added_on: '10 Dec',
-                },
-                {
-                    name: 'Pat',
-                    status: 'Deleted',
-                    added_on: '10 Dec',
+                    progress: 60,
+                    status: 'Level 7',
+                    class: 'md-accent'
                 }
             ];
 
@@ -57,17 +48,17 @@
             $scope.showConfirm = function(ev) {
                 // Appending dialog to document.body to cover sidenav in docs app
                 var confirm = $mdDialog.confirm()
-                    .title('Payment Summary')
-                    .textContent('$200 per month will charged')
+                    .title('Would you like to delete this Student?')
+                    .textContent('All of the Student data will be deleted.')
                     .clickOutsideToClose(true)
-                    .ariaLabel('Lucky day')
+                    .ariaLabel('Delete')
                     .targetEvent(ev)
-                    .ok('I Agree to Pay')
-                    .cancel("No.");
+                    .ok('Please do it!')
+                    .cancel("No. Don't Remove");
                 $mdDialog.show(confirm).then(function() {
-                    $scope.status = 'You decided to pay the money.';
+                    $scope.status = 'You decided to get rid of your debt.';
                 }, function() {
-                    $scope.status = 'You decided to not to pay the money now.';
+                    $scope.status = 'You decided to keep your debt.';
                 });
             };
 
@@ -97,7 +88,7 @@
             $scope.showTabDialog = function(ev) {
                 $mdDialog.show({
                         controller: DialogController,
-                        templateUrl: 'app/views/partials/add_student.html',
+                        templateUrl: 'app/views/partials/individual_student_report.html',
                         parent: angular.element(document.body),
                         targetEvent: ev,
                         clickOutsideToClose:true
