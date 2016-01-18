@@ -25,12 +25,12 @@
       //  sref: '.table'
       //},
       {
-        name: 'Class List',
+        name: 'Users',
         icon: 'supervisor_account',
         sref: '.students'
       },
       {
-        name: 'Account',
+        name: 'Settings',
         icon: 'person',
         sref: '.profile'
       }

@@ -2,13 +2,13 @@
     <md-toolbar style="background-color: teal" >
         <div class="md-toolbar-tools">
             <img src="http://placehold.it/120x64" >
-            <span class="website-title" hide-sm >
-                <h1>
-                    <a ui-sref="student" >Road2Math</a>
-                </h1>
-            </span>
+            <!--<span class="website-title" hide-sm >-->
+                <!--<h1>-->
+                    <!--<a ui-sref="student" >Road2Math.. Learn + Play</a>-->
+                <!--</h1>-->
+            <!--</span>-->
             <!-- fill up the space between left and right area -->
-            <span flex></span>
+            <span flex ></span>
             <h2>{{ vm.game_name }}</h2>
             <span flex></span>
             <md-button ui-sref="student_dashboard"  hide-sm class="title-btn">
@@ -34,9 +34,6 @@
 
                 </div>
                 <div flex >
-
-                </div>
-                <div flex >
                     <img src="assets/images/r2mdemo.png">
                 </div>
                 <div flex layout-fill layout="row" layout-align="space-around center" >
@@ -48,7 +45,7 @@
                     </div>
                     <div layout="column" layout-align="center end">
 
-                        <md-button ng-click="vm.showAlert()" class="md-raised help-btn" layout-align="end center" >
+                        <md-button class="md-raised help-btn" layout-align="end center" >
                             <i class="material-icons">help</i> Help
                         </md-button>
                     </div>

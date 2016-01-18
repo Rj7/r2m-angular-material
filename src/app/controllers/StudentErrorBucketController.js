@@ -33,7 +33,7 @@
     function StudentErrorBucketController() {
         var alert;
 
-        this.game_name = "Game Name";
+        this.game_name = "Error Bucket";
 
     }
 })();
