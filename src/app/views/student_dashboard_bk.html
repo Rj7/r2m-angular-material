@@ -1,0 +1,85 @@
+<div layout="column" layout-fill style=" position: absolute;" >
+
+    <md-toolbar style="background-color: #558b2f" >
+        <div class="md-toolbar-tools">
+            <img src="http://placehold.it/120x64" >
+            <span flex></span>
+            <span class="website-title" >
+                <h1>
+                    <a ui-sref="student" >Road2Math = Learn + Play</a>
+                </h1>
+            </span>
+            <!-- fill up the space between left and right area -->
+            <span flex></span>
+            <md-button class="title-btn">
+                Home
+            </md-button>
+            <md-button  class="title-btn">
+                Logout
+            </md-button>
+        </div>
+    </md-toolbar>
+
+    <div layout="row" layout-fill style="background-color: #dcedc8" >
+        <div flex="15" >
+        </div>
+        <div flex="70" layout="column" >
+
+            <div flex="10">
+
+            </div>
+            <div flex="70"  >
+                <div layout="row" layout-sm="column" style="height: 80%;margin: 25px; padding: 50px;">
+                    <md-card ui-sref="learning_session"  class="dashboard_options" flex layout-align="column">
+                        <div style="margin: 20px; padding:20px" >
+                            <img src="http://placehold.it/350x250">
+                        </div>
+                        <div style=" width: inherit; text-align: center; vertical-align: middle " >
+                            <span>
+
+                                <h2>
+                                    Learn
+                                </h2>
+                            </span>
+
+                        </div>
+                    </md-card>
+                    <md-card ui-sref="student_report" class="dashboard_options" flex>
+                        <div style="margin: 20px; padding:20px" >
+
+                            <img src="http://placehold.it/350x250">
+
+                        </div>
+                        <div style=" width: inherit; text-align: center; vertical-align: middle " >
+                            <span>
+                                <h2>Badges</h2>
+                            </span>
+
+                        </div>
+                    </md-card>
+                    <md-card class="dashboard_options" flex>
+                        <div style="margin: 20px; padding:20px" >
+                            <img src="http://placehold.it/350x250">
+                        </div>
+                        <div style=" width: inherit; text-align: center; vertical-align: middle " >
+                            <span>
+                                <h2>Play</h2>
+                            </span>
+
+                        </div>
+                    </md-card>
+                </div>
+            </div>
+            <div flex="10">
+
+
+            </div>
+        </div>
+        <div flex="15" >
+
+        </div>
+    </div>
+
+
+
+</div>

@@ -1,16 +1,17 @@
-<div layout="column" layout-fill style=" position: absolute;" >
-
-    <md-toolbar style="background-color: #558b2f" >
+<div style="background-color: #b5d592" layout-fill >
+    <md-toolbar style="background-color: teal" >
         <div class="md-toolbar-tools">
             <img src="http://placehold.it/120x64" >
-            <span class="website-title" >
-                <h1>
-                    <a ui-sref="student" >Road2Math.. Learn + Play</a>
-                </h1>
-            </span>
+            <!--<span class="website-title" hide-sm >-->
+            <!--<h1>-->
+            <!--<a ui-sref="student" >Road2Math.. Learn + Play</a>-->
+            <!--</h1>-->
+            <!--</span>-->
             <!-- fill up the space between left and right area -->
+            <span flex ></span>
+            <h1><a ui-sref="student" >Road2Math = Learn + Play</a></h1>
             <span flex></span>
-            <md-button class="title-btn">
+            <md-button ui-sref="student_dashboard"  hide-sm class="title-btn">
                 Home
             </md-button>
             <md-button  class="title-btn">
@@ -19,66 +20,51 @@
         </div>
     </md-toolbar>
 
-    <div layout="row" layout-fill style="background-color: #dcedc8" >
-        <div flex="15" >
+    <div layout="row" style="height: 80%" >
+        <div flex-lg="15" flex-gt-lg="20" flex-md="10" flex-sm="0" >
+
         </div>
-        <div flex="70" layout="column" >
-
-            <div flex="10">
-
-            </div>
-            <div flex="70"  >
-                <div layout="row" layout-sm="column" style="height: 80%;margin: 25px; padding: 50px;">
-                    <md-card ui-sref="learning_session"  class="dashboard_options" flex layout-align="column">
-                        <div style="margin: 20px; padding:20px" >
-                            <img src="http://placehold.it/350x250">
-                        </div>
-                        <div style=" width: inherit; text-align: center; vertical-align: middle " >
-                            <span>
-
-                                <h2>
-                                    Learn
-                                </h2>
-                            </span>
-
-                        </div>
-                    </md-card>
-                    <md-card ui-sref="student_report" class="dashboard_options" flex>
-                        <div style="margin: 20px; padding:20px" >
-
-                            <img src="http://placehold.it/350x250">
-
-                        </div>
-                        <div style=" width: inherit; text-align: center; vertical-align: middle " >
-                            <span>
-                                <h2>Badges</h2>
-                            </span>
-
-                        </div>
-                    </md-card>
-                    <md-card class="dashboard_options" flex>
-                        <div style="margin: 20px; padding:20px" >
-                            <img src="http://placehold.it/350x250">
-                        </div>
-                        <div style=" width: inherit; text-align: center; vertical-align: middle " >
-                            <span>
-                                <h2>Play</h2>
-                            </span>
-
-                        </div>
-                    </md-card>
+        <div layout="row" flex-lg="70" flex="" layout-align="space-around center">
+            <md-card ui-sref="learning_session"  class="dashboard_options" flex layout-align="column">
+                <div style="margin: 30px; padding:20px" >
+                    <img src="http://placehold.it/350x250">
                 </div>
-            </div>
-            <div flex="10">
+                <div style=" width: inherit; text-align: center; vertical-align: middle " >
+                    <span>
 
+                        <h2>
+                            Learn
+                        </h2>
+                    </span>
 
-            </div>
+                </div>
+            </md-card>
+            <md-card ui-sref="student_report" class="dashboard_options" flex>
+                <div style="margin: 30px; padding:20px" >
+                    <img src="http://placehold.it/350x250">
+                </div>
+                <div style=" width: inherit; text-align: center; vertical-align: middle " >
+                    <span>
+                        <h2>Badges</h2>
+                    </span>
+                </div>
+            </md-card>
+            <md-card class="dashboard_options" flex>
+                <div style="margin: 30px; padding:20px" >
+                    <img src="http://placehold.it/350x250">
+                </div>
+                <div style=" width: inherit; text-align: center; vertical-align: middle " >
+                    <span>
+                        <h2>Play</h2>
+                    </span>
+
+                </div>
+            </md-card>
         </div>
-        <div flex="15" >
+        <div flex-lg="15" flex-gt-lg="20" flex-md="10" flex-sm="0" >
 
         </div>
     </div>
-
 
 
 </div>

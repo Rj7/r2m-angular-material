@@ -1,18 +1,18 @@
-<div style="background-color: #b5d592" layout-fill >
+
+<div layout-fill layout="column" >
+
     <md-toolbar style="background-color: teal" >
         <div class="md-toolbar-tools">
             <img src="http://placehold.it/120x64" >
-            <!--<span class="website-title" hide-sm >-->
-            <!--<h1>-->
-            <!--<a ui-sref="student" >Road2Math.. Learn + Play</a>-->
-            <!--</h1>-->
-            <!--</span>-->
+            <span class="website-title" >
+                <h1>
+                    <a ui-sref="student" >Road2Math</a>
+                </h1>
+            </span>
             <!-- fill up the space between left and right area -->
-            <span flex ></span>
-            <h1><a ui-sref="student" >Road2Math = Learn + Play</a></h1>
             <span flex></span>
-            <md-button ui-sref="student_dashboard"  hide-sm class="title-btn">
-                Home
+            <md-button class="title-btn">
+                Settings
             </md-button>
             <md-button  class="title-btn">
                 Logout
@@ -26,7 +26,6 @@
         <div flex="60" layout="column" >
 
             <div layout-gt-md="row">
-                <!--<panel-widget flex title="Students visited" template="app/views/partials/visitors.html" class="fixed-height-widget"></panel-widget>-->
                 <panel-widget flex title="Students visited" template="app/views/partials/visitors.html" class="fixed-height-widget"></panel-widget>
                 <!--<panel-widget flex title="Warnings" template="app/views/partials/warnings.html" class="fixed-height-widget"></panel-widget>-->
                 <panel-widget flex title="Student finished" template="app/views/partials/memory.html" class="fixed-height-widget"></panel-widget>
@@ -50,3 +49,5 @@
 
 
 </div>
+
+

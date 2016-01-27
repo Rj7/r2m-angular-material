@@ -2,14 +2,14 @@
     <md-toolbar style="background-color: teal" >
         <div class="md-toolbar-tools">
             <img src="http://placehold.it/120x64" >
-            <span class="website-title" hide-sm >
-                <h1>
-                    <a ui-sref="student" >Road2Math.. Learn + Play</a>
-                </h1>
-            </span>
+            <!--<span class="website-title" hide-sm >-->
+            <!--<h1>-->
+            <!--<a ui-sref="student" >Road2Math.. Learn + Play</a>-->
+            <!--</h1>-->
+            <!--</span>-->
             <!-- fill up the space between left and right area -->
-            <span flex="25"></span>
-            <h2>Game Name</h2>
+            <span flex ></span>
+            <h2>{{ vm.game_name }}</h2>
             <span flex></span>
             <md-button ui-sref="student_dashboard"  hide-sm class="title-btn">
                 Home
@@ -34,28 +34,28 @@
 
                 </div>
                 <div flex >
-                    Here instructions on How to Play the game show for first time users alone
+                    <img src="assets/images/r2mdemo.png" >
+                    <md-button class="md-raised help-btn" style="position: relative; left: 20px;bottom: 140px;" >
+                        <i class="material-icons">help</i> Help
+                    </md-button>
                 </div>
-                <div flex >
-                    <img src="assets/images/r2mdemo.png">
-                </div>
-                <div flex layout-fill layout="row" layout-align="space-around center" >
-                    <div layout="column" layout-align="center end">
+                <!--<div flex layout-fill layout="row" layout-align="space-around center" >-->
+                    <!--<div layout="column" layout-align="center end">-->
                         <!--<md-button ui-sref="student_dashboard"  class="md-raised"-->
                                    <!--style="width: 150px;float: right; background-color:#4DB6AC ; color: whitesmoke;" >Skip to Home-->
                             <!--<i class="material-icons">keyboard_arrow_right</i>-->
                         <!--</md-button>-->
-                    </div>
-                    <div layout="column" layout-align="center end">
+                    <!--</div>-->
+                    <!--<div layout="column" layout-align="center end">-->
 
-                        <md-button class="md-raised help-btn" layout-align="end center" >
-                            <i class="material-icons">help</i> Help
-                        </md-button>
-                    </div>
-                </div>
+                        <!--<md-button class="md-raised help-btn" layout-align="end center" >-->
+                            <!--<i class="material-icons">help</i> Help-->
+                        <!--</md-button>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
         </div>
-        <div flex-lg="20" flex-gt-lg="20" flex-md="10" flex-sm="0" >
+        <div layout="row" flex-lg="20" flex-gt-lg="20" flex-md="10" flex-sm="0" layout-align="start end"  >
 
         </div>
     </div>

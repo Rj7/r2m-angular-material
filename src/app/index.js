@@ -28,7 +28,9 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
             })
             .state('learning_session', {
                 url:'/student/learning_session',
-                templateUrl:'app/views/student_learning_session.html'
+                templateUrl:'app/views/student_learning_session.html',
+                controller:'StudentLearningSession',
+                controllerAs: 'vm'
             })
             .state('student_report', {
                 url:'/student/report',
